@@ -7,12 +7,11 @@ const App = () => {
 
   return (
     <div>
-        <p>Enter your name:</p>
-        <input type="text" onChange={(e)=>setName(e.target.value)} />
         {
-          name ? <p>Hello {name}!</p> : ""
+          name ? <p>Hello {name}!</p> : <p>Enter your name:</p>
         }
-
+        <input type="text" onChange={(e)=>setName(e.target.value)} />
+        
     </div>
   );
 }
